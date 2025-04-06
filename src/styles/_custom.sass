@@ -34,6 +34,25 @@
     background-color: #F9F9F9
   &-white
     background-color: #fff
+.bg-h85
+  position: relative
+  &::after
+    content: ''
+    position: absolute
+    bottom: 6%
+    left: 0
+    width: 100%
+    height: 85%
+    transform: translateY(-0%)
+    background-color: #FFEBD0
+    z-index: 0
+  .col-lg-12
+    z-index: 1
+  @media screen and (max-width: $bp-max-md)
+    padding: 1rem
+    &::after
+      bottom: 0
+      height: 100%
 
 .border-top
   &.color-primario
@@ -68,31 +87,13 @@
   &-2
     background-image: url("../assets/bg/bg2.svg") !important
     background-position: top
+  &-3
+    background-image: url("../assets/bg/bg3.svg") !important
+    background-position: top
   &-slider
     background-image: url("../assets/bg/bg-slider.svg") !important
     background-position: bottom
 
-.bg-h85
-  position: relative
-  &::after
-    content: ''
-    position: absolute
-    bottom: 0%
-    left: 0
-    width: 100%
-    height: 88%
-    transform: translateY(-0%)
-    background-color: #E6F0CD
-    z-index: 0
-  div
-    z-index: 1
-
-
-  @media screen and (max-width: $bp-max-md)
-    padding: 1rem
-  
-    &::after
-      height: 100%
 
 .pst
   min-width: 350px !important
