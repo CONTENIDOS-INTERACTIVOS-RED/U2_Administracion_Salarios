@@ -17,13 +17,17 @@
 
 .bg-color
   &-1
-    background-color: #EAF8FD
+    background-color: #FFEBD0
   &-2
-    background-color: #FFFBE8
+    background-color: #E6F0CD
   &-3
-    background-color: #F0E9F6
+    background-color: #E2DACC !important
   &-4
-    background-color: #EAF8FD
+    background-color: #D6F5FB
+  &-5
+    background-color: #F6F3EF
+  &-6
+    color: #496406 !important
   &-info
     background-color: #E8EEFD
   &-sintesis
@@ -48,18 +52,50 @@
   @media screen and (max-width: $bp-max-sm)
     padding-left: 1.5rem
     padding-right: 1.5rem
+.bg-full-width-2
+  background-size: contain
+  background-repeat: no-repeat
+  background-position: top
+  margin-inline: -3.3rem
+  @media screen and (max-width: $bp-max-sm)
+    padding-left: 1.5rem
+    padding-right: 1.5rem
 
 .bg-fondo
   &-1
-    background-image: url("../assets/bg/bg1.png") !important
+    background-image: url("../assets/bg/bg1.svg") !important
     background-position: top
   &-2
-    // background-image: url("../assets/bg/bg2.png") !important
-    background-position: bottom
+    background-image: url("../assets/bg/bg2.svg") !important
+    background-position: top
   &-slider
-    background-image: url("../assets/bg/bg-slider.png") !important
+    background-image: url("../assets/bg/bg-slider.svg") !important
     background-position: bottom
 
+.bg-h85
+  position: relative
+  &::after
+    content: ''
+    position: absolute
+    bottom: 0%
+    left: 0
+    width: 100%
+    height: 88%
+    transform: translateY(-0%)
+    background-color: #E6F0CD
+    z-index: 0
+  div
+    z-index: 1
+
+
+  @media screen and (max-width: $bp-max-md)
+    padding: 1rem
+  
+    &::after
+      height: 100%
+
+.pst
+  min-width: 350px !important
 // Variables
 $custom-card-border-radius: 0px
 $custom-card-shadow: 0 4px 8px rgba(0,0,0,0.1)
@@ -73,7 +109,7 @@ $custom-card-img-height: 322px
   box-shadow: $custom-card-shadow
   height: 100%
   background-color: $custom-card-text-bg
-  transition: transform 0.3s ease 
+  transition: transform 0.3s ease
   cursor: pointer
   &:hover
     transform: scale(1.01)
@@ -82,12 +118,12 @@ $custom-card-img-height: 322px
     object-fit: cover
 
 .custom-image-card-2
-  border-radius: $custom-card-border-radius
+  //border-radius: $custom-card-border-radius
   overflow: hidden
   box-shadow: $custom-card-shadow
   height: 100%
   background-color: $custom-card-text-bg
-  transition: transform 0.3s ease 
+  transition: transform 0.3s ease
   cursor: pointer
   &:hover
     transform: scale(1.01)
@@ -95,18 +131,16 @@ $custom-card-img-height: 322px
     height: 253px
     object-fit: cover
 
-
 .acordion__header
-  background-color: lighten($color-acento-contenido, 25%) !important
+  background-color: lighten($color-secundario, 35%) !important
 
 .acordion__header--active
-  background-color: $color-acento-contenido !important
+  background-color: $color-secundario !important
   h4, i
     color: #000 !important
 
 .acordion__contenido
-  background-color: lighten($color-acento-contenido, 27%) !important
-
+  background-color: lighten($color-secundario, 40%) !important
 
 .anexo__texto
   p, strong
@@ -116,12 +150,11 @@ $custom-card-img-height: 322px
 .bloque-texto-c
   padding: 34px !important
   p
-    font-size: 22px  !important
+    font-size: 22px !important
     line-height: 26.4px !important
     font-weight: 700 !important
   i
     color: $color-primario !important
-
 
 .bg-ppal-claro
   background-color: #F7F4ED
@@ -133,7 +166,6 @@ $custom-card-img-height: 322px
   background-color: #1172B3
 .bg-red-claro
   background-color: #FCDFDB !important
-
 
 .box-shadow
   box-shadow: 0 4px 8px rgba(0,0,0,0.1)
@@ -159,7 +191,6 @@ $custom-card-img-height: 322px
   width: 48px !important
   @media screen and (max-width: $bp-max-sm)
     width: 38px !important
-  
 
 .img-infografica__item__dot:before, .img-infografica-b__item__dot:before
   opacity: 1
@@ -168,7 +199,7 @@ $custom-card-img-height: 322px
 
 .img-infografica__card, .img-infografica-b__card
   width: 350px !important
-  
+
 .img-infografica__item__numero
   font-weight: 900
 
@@ -203,7 +234,7 @@ $custom-card-img-height: 322px
 
 .border-top.color-primario
   border-top: 5px solid $color-primario !important
-  
+
 .material-complementario
   p,a
     font-size: 1rem !important
