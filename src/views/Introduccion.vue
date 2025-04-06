@@ -4,10 +4,10 @@
   .container.tarjeta.tarjeta--blanca.p-4.p-md-5.mb-5
 
     .row.mb-5
-      .col-lg-4.order-2
+      .col-lg-4.order-lg-2.mb-3.mb-lg-0
         figure
           img(src="@/assets/curso/intro/1.png", data-aos="zoom-in")
-      .col-lg-8.order-1.mb-3.mb-lg-0
+      .col-lg-8.order-lg-1
         .bg-color-1.p-4.mb-3(data-aos="fade-left")
           .row.align-items-start
             .col-lg-auto
