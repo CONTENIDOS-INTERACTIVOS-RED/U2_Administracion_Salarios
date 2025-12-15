@@ -228,7 +228,7 @@ export default {
     {
       termino: 'Brecha salarial',
       significado:
-        'Diferencia en los salarios que reciben distintos grupos de trabajadores, habitualmente basada en factores como género, edad, raza, educación o sector',
+        'Diferencia en los salarios que reciben distintos grupos de trabajadores, habitualmente basada en factores como género, edad, raza, educación o sector.',
     },
     {
       termino: 'Contrato de trabajo',

@@ -116,6 +116,12 @@
                     p.mb-0 La naturaleza del trabajo que se va a realizar.
                   li.d-flex
                     i.far.fa-arrow-alt-circle-right.bg-color-6
+                    p.mb-0 El valor del salario, la forma de pago y las fechas de pago.
+                  li.d-flex
+                    i.far.fa-arrow-alt-circle-right.bg-color-6
+                    p.mb-0 La duración del contrato.
+                  li.d-flex
+                    i.far.fa-arrow-alt-circle-right.bg-color-6
                     p.mb-0 Las condiciones de terminación del contrato y los procedimientos para dar el preaviso de terminación.
                   li.d-flex
                     i.far.fa-arrow-alt-circle-right.bg-color-6
